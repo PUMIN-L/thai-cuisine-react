@@ -1,0 +1,67 @@
+@import "tailwindcss";
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.no-spinner {
+  -moz-appearance: textfield;
+}
+:root {
+ 
+}
+
+@layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #e5e7eb; /* gray-200 */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #22c55e; /* green-500 */
+    border-radius: 9999px;
+  }
+
+  /* Firefox */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb #101828;
+  }
+}
+
+.my-select__control {
+  background-color: #1f2e4d !important;
+  border-color: #1f2e4d !important;
+  border: white !important;
+  cursor: pointer !important;
+}
+
+.my-select__single-value {
+  color: white !important;
+}
+
+.my-select__placeholder {
+  color: #f3f4f6 !important;
+}
+
+.my-select__menu {
+  background-color: #1f2e4d !important;
+}
+
+.my-select__option {
+  color: white !important;
+}
+
+.my-select__option--is-focused {
+  background-color: #101828 !important;
+  cursor: pointer !important;
+}
+
+.my-select__option--is-selected {
+  background-color: #101828 !important;
+  cursor: pointer !important;
+}
+
