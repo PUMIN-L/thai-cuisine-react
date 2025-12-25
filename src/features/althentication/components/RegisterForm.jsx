@@ -74,7 +74,8 @@ export default function RegisterForm({ onSuccess }) {
 
     }
 
-    const classNameP = "flex justify-end w-65 m-auto font-bold text-blue-800 mr-5"
+    const classNameP = "flex justify-end w-65 m-auto font-bold text-blue-800 mr-5 hidden lg:block"
+    const classNamePForPhone = "w-[15rem]  m-auto font-bold text-blue-800 lg:hidden"
 
     return (<>
         {loading && <Spinner transparent={true} />}

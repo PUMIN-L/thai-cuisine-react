@@ -26,13 +26,18 @@ const heightButtonMap = {
     15: 'h-15',
 }
 
+const pxMap = {
+    1: 'px-1',
+    3: 'px-3'
+}
 
-export default function Button({ children, bg = "yellow", color = 'white', width, onClick, addClass = "", height }) {
+
+export default function Button({ children, bg = "yellow", color = 'white', width, onClick, addClass = "", height, px = 3 }) {
     return (
         <>
-            <button className={`px-3 py-1.5 bg-amber-300
+            <button className={` py-1.5 bg-amber-300 
                 ${bgMap[bg]} ${textConorMap[color]} rounded-md ${widthButtonMap[width]} active:scale-98 ${addClass} 
-                ${heightButtonMap[height]}`}
+                ${heightButtonMap[height]} ${pxMap[px]} px-`}
                 onClick={onClick}
                 style={{ cursor: 'pointer' }}
             >

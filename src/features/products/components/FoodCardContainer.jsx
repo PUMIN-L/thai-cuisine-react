@@ -20,26 +20,28 @@ export default function FoodCardContainer() {
 
     return (
         <>
-            <main className=" overflow-auto  w-[52rem] h-full  bg-gray-100 rounded-2xl ">
-                {createOrder[0] ? <div className="flex justify-start ">
+            <div className=" bg-gray-100 rounded-2xl  
+            lg:overflow-auto  lg:w-[52rem] lg:h-full 
+             ">
+                {createOrder[0] ? <div className="flex justify-start">
                     <Link to={'/orders'}>
-                        <p
-                            className=" mt-5 text-end  max-w-46  ml-11 font-bold text-blue-900 cursor-pointer 
-                        hover:underline hover:underline-offset-2 \">
-                            <div className="flex  justify-center items-center  gap-1">
+                        <div
+                            className=" mt-3 ml-5 text-end  max-w-46   font-bold text-blue-900 cursor-pointer 
+                        hover:underline hover:underline-offset-2 lg:ml-11">
+                            <div className="flex justify-center items-center  gap-1">
                                 Go to your basket →<div className="w-6 m-0 p-0"><BasketIcon /></div>
                             </div>
-
-                        </p>
+                        </div>
                     </Link>
                 </div> : <p
-                    className="pt-3 ml-11 font-bold text-black ">
-                    Click on food picture for Ass order.
+                    className="pt-3 ml-2 font-bold text-black lg:ml-11 ">
+                    Click on food picture for Add order.
                 </p>}
 
 
 
-                <div className="space-y-4 mt-3 flex justify-start gap-2 flex-wrap ">
+                <div className="space-y-4 mt-3 flex justify-center gap-2 flex-wrap 
+                lg:justify-start lg:pl-8">
 
                     {allProduct?.map(e => {
                         if (e.id !== 0) {
@@ -74,8 +76,8 @@ export default function FoodCardContainer() {
                     <div className="flex justify-end ">
                         <Link to={'/orders'}>
                             <p
-                                className="pb-5 mr-5 text-end  max-w-46  ml-11 font-bold text-blue-900 cursor-pointer 
-                        hover:underline hover:underline-offset-2 \">
+                                className="mt-3 pb-5 mr-5 text-end  max-w-46  ml-11 font-bold text-blue-900 cursor-pointer 
+                        hover:underline hover:underline-offset-2 lg:mt-0">
                                 <div className="flex  justify-center items-center  gap-1">
                                     Go to your basket →<div className="w-6 m-0 p-0"><BasketIcon /></div>
                                 </div>
@@ -85,10 +87,10 @@ export default function FoodCardContainer() {
                     </div>
 
                     : <p
-                        className="pb-5 ml-11 font-bold text-black text-end mr-5 ">
-                        Click on food picture for Ass order.
+                        className="pb-5 mt-2 font-bold text-black text-end mr-5 ml:ml-11">
+                        Click on food picture for Add order.
                     </p>}
-            </main>
+            </div>
         </>
     )
 }

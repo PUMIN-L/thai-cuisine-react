@@ -72,14 +72,16 @@ export default function LoginForm({ onSuccess }) {
 
     }
 
-    const classNameP = "w-[15rem]  m-auto font-bold text-blue-800"
+    const classNameP = "w-[15rem]  m-auto font-bold text-blue-800 hidden "
 
     return (
         <>
             {loading && <Spinner transparent={true} />}
             <form onSubmit={handleClickSubmit} autoComplete="off">
-                <div className="mt-5 flex flex-col w-[30rem] ">
-                    <div className="flex mb-5 ">
+                <div className="mt-5 flex flex-col 
+                lg:w-[20rem] ">
+                    <div className="flex flex-col  mb-5 
+                    lg:flex-row">
                         <p className={classNameP}>Username or Email :</p>
                         <Input
                             placeholder="Input your username or Email "
@@ -89,7 +91,8 @@ export default function LoginForm({ onSuccess }) {
                             error={inputError.usernameOrEmail}
                         />
                     </div>
-                    <div className="flex mb-7">
+                    <div className="flex flex-col  mb-5 
+                    lg:flex-row">
                         <p className={classNameP}>Password :</p>
                         <Input
                             placeholder="Input password"

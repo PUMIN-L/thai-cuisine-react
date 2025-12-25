@@ -7,8 +7,9 @@ const menuList = [
     { id: 2, message: "MENU", to: "/menu" },
     { id: 3, message: "CONTACT US", to: "/contactus" },
     { id: 4, message: "SEE ORDER", to: "/your-order" },
-    { id: 5, message: <div className="w-8 m-0 p-0"><BasketIcon /></div>, to: "/orders" },
     { id: 6, message: "SETTING", to: "/setting" },
+    { id: 5, message: <div className="w-8 m-0 p-0"><BasketIcon /></div>, to: "/orders" },
+
 ]
 
 const menuListForUser = [
@@ -30,14 +31,15 @@ export default function Menu() {
     const list = authUser?.roleId === 2 ? menuList : menuListForUser
 
     return (
-        <nav className="flex items-center">
+        <nav className="flex flex-wrap w-full items-center justify-center-safe mt-2
+        lg:justify-end lg:flex-row lg:mt-0">
             {list.map(el => {
                 return <Link
                     key={el.id}
                     to={el.to}
                     className={`flex items-center ${pathname === el.to ? "" : "hover:bg-yellow-200"} 
                     ${pathname === el.to ? "text-amber-500" : "text-gray-500"} 
-                    mx-3 p-2 rounded-lg font-bold`}
+                    mx-3 p-1 rounded-lg font-bold`}
                 >
                     {el.message}
                 </Link>

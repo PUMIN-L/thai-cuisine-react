@@ -89,22 +89,22 @@ export default function CreateOrderForm() {
     return (<>
         {loading && <Spinner transparent={true} />}
         {
-            createOrder[0] ? (<div className="flex h-[20rem]   shadow-lg  rounded-lg">
-                <div className="  overflow-auto px-3 ">
+            createOrder[0] ? (<div className="flex flex-col   shadow-lg  rounded-lg w-full
+            lg:flex-row lg:h-[20rem] lg:w-auto 
+            ">
+                <div className="overflow-auto px-3 mt-25 lg:mt-0">
                     {createOrder.map(e => {
                         return <ItemOrderCard information={e} key={e.id} />
                     })}
-
-
                 </div>
 
-                <div className=" overflow-auto px-10 ">
+                <div className=" overflow-auto px-10 mt-5 lg:mt-0">
 
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 lg:text-lg">
                         <p className="font-bold">Totle Prict</p>
                         <p>${order.totalPrice}</p>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 lg:text-lg">
                         <p className="font-bold">Choose a payment method</p>
                         <label>
                             <input type="radio" name="payment" value="bank"
@@ -123,7 +123,7 @@ export default function CreateOrderForm() {
                         <br />
 
                     </div>
-                    <div className="flex gap-5 mt-5 justify-center">
+                    <div className="flex gap-5 mt-5 justify-center text-[0.9rem] pb-5 lg:text-[1.1rem] lg:pb-0">
                         <Button bg="green" onClick={handleClickOrderNow} >Order now</Button>
                         <Button bg="red" onClick={handleClickCancleOrder} >Cancle order</Button>
                     </div>
