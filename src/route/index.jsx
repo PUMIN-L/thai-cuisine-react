@@ -10,7 +10,7 @@ const ProductProtectedRoute = lazy(() => import("../features/products/components
 const ProtectedRouteIsAdmin = lazy(() => import("../features/althentication/components/ProtectedRouteIsAdmin"))
 const OrdersPage = lazy(() => import("../pages/OrdersPage"))
 const SeeOrderPage = lazy(() => import("../pages/SeeOrderPage"))
-const ContectUs = lazy(() => import("../pages/contactUs"))
+const ContectUs = lazy(() => import("../pages/ContactUs"))
 
 const router = createBrowserRouter([
     {
