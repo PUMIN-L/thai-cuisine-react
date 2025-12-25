@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 import Button from "../../../components/Button";
 import useOrder from "../hook/useOrder";
-import ItemOrderCard from "./itemOrderCard";
+import ItemOrderCard from "./ItemOrderCard";
 import { Link, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react";
 import useAuth from "../../../hook/useAuth";
