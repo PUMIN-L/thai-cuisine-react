@@ -14,6 +14,7 @@ export default function CreateOrderForm() {
     const navigate = useNavigate()
 
     const { authUser } = useAuth()
+
     const { createOrder, setCreateOrder, setOrdersByUser, ordersByUser } = useOrder()
 
     const orderInit = {
@@ -89,7 +90,7 @@ export default function CreateOrderForm() {
     return (<>
         {loading && <Spinner transparent={true} />}
         {
-            createOrder[0] ? (<div className="flex flex-col-reverse shadow-lg rounded-lg w-full mt-85 h-[90vh]
+            createOrder[0] ? (<div className="flex flex-col-reverse shadow-lg rounded-lg w-full mt-60 h-[90vh]
          lg:flex-row lg:h-[20rem] lg:w-auto lg:mt-0 bg-gray-200 lg:bg-white"
             >
                 <div className="overflow-auto px-3 h-[50vh] lg:mt-0 lg:mt-2 lg:ml-3 lg:max-h-none ">

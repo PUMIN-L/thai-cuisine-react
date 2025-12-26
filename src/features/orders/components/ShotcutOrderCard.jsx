@@ -18,11 +18,14 @@ export default function ShotcutOrderCard({ order }) {
                 <p>Order id : <span className="text-blue-400 font-bold">{order.id}</span></p>
                 <p className="min-w-32">Total price : <span className="text-orange-400 font-bold">{order.totalPrice}</span></p>
             </div>
-            <div className="min-w-63  ">
+            <div className="min-w-63 ">
                 <p>Order status : {order.orderStatus}</p>
                 <p>Payment status : {order.paymentStatus}</p>
             </div>
+
             <Button bg="green" onClick={handleOnClickSeeOrder}>See Order</Button>
+
+
         </div >
 
         <Modal
