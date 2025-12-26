@@ -91,7 +91,7 @@ export default function CreateOrderForm() {
         {loading && <Spinner transparent={true} />}
         {
             createOrder[0] ? (<div className="flex flex-col-reverse shadow-lg rounded-lg w-full   h-full
-         lg:flex-row lg:h-[20rem] lg:w-auto lg:mt-0 bg-gray-200 lg:bg-white"
+         lg:flex-row lg:h-[20rem] lg:w-auto lg:mt-0 bg-gray-200 lg:bg-white lg:p-5"
             >
                 <div className="overflow-auto px-3 h-full lg:mt-0 lg:mt-2 lg:ml-3 lg:max-h-none ">
                     {createOrder.map(e => {
@@ -129,7 +129,7 @@ export default function CreateOrderForm() {
                         <Button bg="red" onClick={handleClickCancleOrder} >Cancle order</Button>
                     </div>
                 </div>
-            </div>) : (<div className="flex flex-col justify-center items-center">
+            </div>) : (<div className="flex flex-col justify-center items-center mt-50 lg:mt-0">
                 <p className="mb-2">You haven't added any menu yet</p>
                 <Link to={"/menu"}><Button>Check here to choose menu.</Button></Link>
             </div>)

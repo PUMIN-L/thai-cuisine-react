@@ -5,8 +5,6 @@ import Button from "../components/Button"
 import DeleteMenuForm from "../features/products/components/DeleteMenuForm"
 import EditMenuContainer from "../features/products/components/EditMenuContainer"
 
-
-
 export default function Setting() {
 
     const [openAddMenu, setOpenAddMenu] = useState(false)

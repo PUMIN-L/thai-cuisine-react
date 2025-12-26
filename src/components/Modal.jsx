@@ -23,12 +23,10 @@ export default function Modal({ onClose, open, children, title, bg, textColor })
 
     return (<>
         {open ? createPortal(<>
-            <div className="fixed inset-0 bg-black opacity-95 min-h-screen "></div>
+            <div className="fixed inset-0 bg-black opacity-95 min-h-screen z-30 "></div>
             <div
                 className="fixed inset-0 flex justify-center items-center 
-             rounded-lg z-30 min-h-screen  
-             lg:w-full
-             "
+                      rounded-lg z-30 min-h-screen  lg:w-full"
                 onMouseDown={onClose}
             >
 

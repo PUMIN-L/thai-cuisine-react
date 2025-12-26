@@ -1,6 +1,6 @@
 export default function ContectUs() {
     return (<>
-        <div className="bg-gray-200 p-6 py-10  mt-40 rounded-lg lg:h-[70vh] lg:p-15">
+        <div className=" p-6 py-10  mt-40 rounded-lg lg:h-[70vh] lg:p-15 lg:bg-gray-200">
             <div className="max-w-xl mx-auto p-8  bg-gray-900 rounded-2xl 
             shadow-lg flex flex-col items-center w-full  lg:w-full   ">
 

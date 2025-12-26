@@ -15,17 +15,15 @@ export default function SeeOrderPage() {
         <>
             {loadingOrder && <Spinner transparent={true} />}
             {ordersByUser?.length && authUser?.id ? (
-                <div className="mt-42 z-10 h-full mx-auto  w-70 fixed top-0 right-14
-            flex-col overflow-auto no-scrollbar 
-            lg:flex lg:justify-start lg:items-center lg:w-full lg:h-[40rem] lg:mt-40">
-                    <div className="sticky top-0  bg-white w-full">
-                        <h1 className="font-extrabold text-4xl  text-blue-900 b w-full p-5 text-center 
+                <div className="mt-42 z-10 w-full flex justify-start items-center
+            flex-col overflow-auto no-scrollbar h-[75vh]
+            lg:flex lg:items-center lg:w-full lg:h-[40rem] lg:right-0">
+                    <div className="w-full">
+                        <h1 className="font-extrabold text-4xl  text-blue-900 b w-full p-5 text-center  
                      ">
                             {authUser.roleId === 1 ? "Your Order" : "All Order"}
                         </h1>
                     </div>
-
-
                     <OrderContainer orders={ordersByUser} />
 
                 </div>
@@ -44,7 +42,6 @@ export default function SeeOrderPage() {
                         </div>
                     </div>
                 )}
-
         </>
     )
 }

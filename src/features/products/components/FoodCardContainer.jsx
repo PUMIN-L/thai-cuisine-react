@@ -75,14 +75,14 @@ export default function FoodCardContainer() {
                 {createOrder[0] ?
                     <div className="flex justify-end ">
                         <Link to={'/orders'}>
-                            <p
+                            <div
                                 className="mt-3 pb-5 mr-5 text-end  max-w-46  ml-11 font-bold text-blue-900 cursor-pointer 
                         hover:underline hover:underline-offset-2 lg:mt-0 lg:max-w-full">
                                 <div className="flex  justify-center items-center  gap-1 ">
                                     Go to your basket →<div className="w-6 m-0 p-0"><BasketIcon /></div>
                                 </div>
 
-                            </p>
+                            </div>
                         </Link>
                     </div>
 

@@ -34,7 +34,6 @@ export default function ShotcutOrderCard({ order }) {
             bg='gray900'
             title={`Order number : ${order.id}`}
             textColor='white'
-
         >
             <ShowOrderInformation order={order} onClose={() => setOpenModal(false)} />
         </Modal>
