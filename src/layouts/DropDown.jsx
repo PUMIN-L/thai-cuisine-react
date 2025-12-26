@@ -29,16 +29,7 @@ export default function Dropdown({ username, logout }) {
             data-leave:ease-in bg-black dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"
             >
                 <div className="py-1">
-                    <MenuItem>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-sm text-gray-700  data-focus:bg-gray-900 
-                            data-focus:text-gray-900 data-focus:outline-hidden dark:text-gray-300 
-                            dark:data-focus:bg-gray/5 dark:data-focus:text-white "
-                        >
-                            Support
-                        </a>
-                    </MenuItem>
+
                     <MenuItem>
                         <div
                             onClick={() => setAccountSetting(prev => !prev)}
