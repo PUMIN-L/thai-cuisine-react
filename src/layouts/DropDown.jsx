@@ -10,14 +10,14 @@ export default function Dropdown({ username, logout }) {
     const [openAccountSentting, setAccountSetting] = useState(false)
 
     return (
-        <Menu as="div" className="relative inline-block ">
-            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 
+        <Menu as="div" className="relative inline-block text-xl">
+            <MenuButton className="inline-flex w-full h-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 
             text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50 
             dark:bg-white/10 dark:text-white dark:shadow-none dark:inset-ring-white/5 dark:hover:bg-white/20
-              cursor-pointer">
-                <p className=' font-bold' >{username}</p>
+              cursor-pointer ">
+                <p className=' font-bold lg:text-lg' >{username}</p>
 
-                <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 text-gray-400 " />
+                <ChevronDownIcon aria-hidden="true" className="-mr-1 size-5 lg:size-7 text-gray-400 " />
             </MenuButton>
 
             <MenuItems

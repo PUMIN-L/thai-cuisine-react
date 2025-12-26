@@ -89,7 +89,7 @@ export default function AddMenuForm({ onSuccess }) {
         { value: "dessert", label: "dessert" },
     ]
 
-    const classNameP = "w-40 m-auto font-bold text-blue-800 "
+    const classNameP = "w-40 m-auto font-bold text-blue-800 hidden lg:block"
     return (<div>
         {loaging && <Spinner transparent={true} />}
         <div className="pt-5">
@@ -128,14 +128,14 @@ export default function AddMenuForm({ onSuccess }) {
                 </div>
 
                 <div className="flex items-center">
-                    <p className={` w-28  font-bold text-blue-800`}>category :</p>
+                    <p className={` w-28  font-bold text-blue-800 hidden lg:block`}>category :</p>
                     <div>
                         <Select
                             options={optionsFoodCategory}
                             onChange={(e) => { setInput(prev => ({ ...prev, "categoryName": e.value })) }}
                             placeholder="Input category name"
                             classNamePrefix=".select-error__control"
-                            className=" mt-2 "
+                            className=" mt-2 w-64"
                             error={inputError.categoryName}
                         />
                         {inputError.categoryName && (
@@ -163,7 +163,7 @@ export default function AddMenuForm({ onSuccess }) {
 
                     <div className=" w-full ">
                         <div className="max-w-sm mx-auto">
-                            <div className=" rounded-xl overflow-hidden shadow-lg cursor-pointer">
+                            <div className=" rounded-xl overflow-hidden shadow-lg cursor-pointer mt-7 lg:mt-0">
                                 <Avatar
                                     src={file ? URL.createObjectURL(file) : blankImage}
                                     onClick={() => fileEl.current.click()}

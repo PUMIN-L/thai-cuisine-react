@@ -66,7 +66,7 @@ export default function DeleteMenuForm() {
 
     return (<>
         {loadingForDelete && <Spinner transparent={true} />}
-        <div className='mt-3  w-[20rem]'>
+        <div className='mt-3  lg:w-[20rem]'>
             <Listbox value={selected} onChange={handleOnChange}>
                 <div className="relative ">
                     <ListboxButton className="grid border-2 w-full cursor-default 
@@ -79,8 +79,8 @@ export default function DeleteMenuForm() {
                                 src={selected.imageUrl || thaiFood}
                                 className="size-10 shrink-0 rounded-lg bg-gray-700 outline -outline-offset-1 outline-white/10"
                             />
-                            <span className="block truncate ml-2">No.{selected.number}</span>
-                            <span className="block truncate">{selected.name}</span>
+                            <span className="block truncate ml-2 lg:text-lg">No.{selected.number}</span>
+                            <span className="block truncate lg:text-lg">{selected.name}</span>
                         </span>
                         <ChevronUpDownIcon
                             aria-hidden="true"
@@ -101,7 +101,8 @@ export default function DeleteMenuForm() {
                                     <ListboxOption
                                         key={menu.id}
                                         value={menu}
-                                        className="group relative cursor-default py-2 pr-9 pl-3 text-white select-none data-focus:bg-indigo-500 data-focus:outline-hidden"
+                                        className="group relative cursor-default py-2 pr-9 pl-3 text-white lg:text-lg
+                                        select-none data-focus:bg-indigo-500 data-focus:outline-hidden"
                                     >
                                         <div className="flex items-center">
                                             <img
@@ -130,7 +131,7 @@ export default function DeleteMenuForm() {
                 </div>
             </Listbox >
         </div >
-        {deleteButton && <div className='flex gap-5 mt-3 justify-center'>
+        {deleteButton && <div className='flex gap-5 mt-3 justify-center lg:text-lg'>
             <Button bg="red" onClick={handleClickDelete}>Delete</Button>
             <Modal
                 onClose={() => setOpenConfirmDelete(false)}
@@ -144,13 +145,5 @@ export default function DeleteMenuForm() {
             </Modal>
             <Button bg='yellow' onClick={handleClickCencle} >Cencle</Button>
         </div>}
-
-
-
-
-
-
-
-
     </>)
 }

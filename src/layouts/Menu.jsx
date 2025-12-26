@@ -31,7 +31,7 @@ export default function Menu() {
     const list = authUser?.roleId === 2 ? menuList : menuListForUser
 
     return (
-        <nav className="flex flex-wrap w-full items-center justify-center-safe mt-2
+        <nav className="flex flex-wrap w-full items-center justify-center-safe gap-2
         lg:justify-end lg:flex-row lg:mt-0">
             {list.map(el => {
                 return <Link

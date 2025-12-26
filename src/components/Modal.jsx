@@ -42,7 +42,7 @@ export default function Modal({ onClose, open, children, title, bg, textColor })
 
                         <div className="flex justify-between min-w-3xs z-40 ">
                             <button className="invisible ">&#10005;</button>
-                            <div className={`font-bold text-amber-700 text-2xl ${textColorMap[textColor]}  `}>{title}</div>
+                            <div className={`font-bold text-amber-700 text-lg ${textColorMap[textColor]} lg:text-2xl `}>{title}</div>
                             <button
                                 onClick={onClose}
                                 style={{ cursor: 'pointer' }}

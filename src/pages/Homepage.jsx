@@ -5,7 +5,7 @@ export default function Homepage() {
     return (
         <>
             <div className=" mt-36 z-10 h-[39rem] mb-8  opacity-90 flex justify-center items-center 
-         xl:h-[32rem] lg:h-[22rem] relative">
+         xl:h-[32rem]  relative">
                 <div className=" absolute inset-0  overflow-hidden opacity-90  w-full  rounded-2xl ">
                     <img
                         src="https://res.cloudinary.com/dtbfee3ql/image/upload/v1717065268/samples/food/fish-vegetables.jpg"

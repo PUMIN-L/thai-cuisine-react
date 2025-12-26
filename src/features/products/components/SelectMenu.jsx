@@ -17,7 +17,7 @@ export default function SelectMenu() {
     }
 
     return (<>
-        <div className='mt-3  w-[20rem]'>
+        <div className='mt-3  lg:w-[20rem]'>
             <Listbox value={selectedForEdit} onChange={handleOnChange}>
                 <div className="relative ">
                     <ListboxButton className="grid border-2 w-full cursor-default 
@@ -30,13 +30,13 @@ export default function SelectMenu() {
                                 src={selectedForEdit?.imageUrl || thaiFood}
                                 className="size-10 shrink-0 rounded-lg bg-gray-700 outline -outline-offset-1 outline-white/10"
                             />
-                            <span className="block truncate ml-2">No.{selectedForEdit?.number}</span>
-                            <span className="block truncate">{selectedForEdit?.name}</span>
+                            <span className="block truncate ml-2 lg:text-lg">No.{selectedForEdit?.number}</span>
+                            <span className="block truncate lg:text-lg">{selectedForEdit?.name}</span>
                         </span>
                         <ChevronUpDownIcon
                             aria-hidden="true"
                             className="col-start-1 row-start-1 size-5 self-center justify-self-end 
-                            text-gray-400 sm:size-4 cursor-pointer"
+                            text-gray-400 sm:size-4 cursor-pointer "
                         />
                     </ListboxButton>
 
@@ -52,7 +52,8 @@ export default function SelectMenu() {
                                     <ListboxOption
                                         key={menu.id}
                                         value={menu}
-                                        className="group relative cursor-default py-2 pr-9 pl-3 text-white select-none data-focus:bg-indigo-500 data-focus:outline-hidden"
+                                        className="group relative cursor-default py-2 pr-9 pl-3 text-white lg:text-lg 
+                                        select-none data-focus:bg-indigo-500 data-focus:outline-hidden"
                                     >
                                         <div className="flex items-center">
                                             <img

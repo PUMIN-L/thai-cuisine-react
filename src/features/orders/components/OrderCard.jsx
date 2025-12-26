@@ -28,7 +28,7 @@ export default function OrderCard({ information }) {
 
             <div className="ml-[-1rem] flex flex-col flex-1">
                 <div className="flex gap-2 text-white ">
-                    <p>No.{information.id}</p>
+                    <p>No.{product?.number}</p>
                     <p>{product?.name}</p>
                 </div>
                 <div className="flex gap-2 text-white  ">

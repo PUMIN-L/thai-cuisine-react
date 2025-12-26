@@ -15,7 +15,7 @@ export default function MenuLogin() {
 
 
     return (
-        <div className='flex justify-end  gap-2 items-center mb-3'>
+        <div className='flex justify-end  gap-2 items-center mb-3 '>
             ({authUser ? <>
                 <div className="mr-2">
                     <div className="mt-0.5">
@@ -26,7 +26,8 @@ export default function MenuLogin() {
                     </div>
 
                 </div>
-                <Avatar src={authUser?.picture} />
+                <Avatar src={authUser?.picture} size="3.5" className="lg:hidden rounded-full" />
+                <Avatar src={authUser?.picture} size="4" className={"hidden lg:block lg:rounded-full"} />
 
             </>
                 : (<div className='flex gap-5 mr-2'>

@@ -92,7 +92,7 @@ export default function CreateOrderForm() {
             createOrder[0] ? (<div className="flex flex-col   shadow-lg  rounded-lg w-full
             lg:flex-row lg:h-[20rem] lg:w-auto 
             ">
-                <div className="overflow-auto px-3 mt-25 lg:mt-0">
+                <div className="overflow-auto px-3  mt-60 max-h-[40vh] lg:mt-0 lg:mt-0 lg:max-h-none">
                     {createOrder.map(e => {
                         return <ItemOrderCard information={e} key={e.id} />
                     })}

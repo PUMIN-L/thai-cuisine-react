@@ -98,15 +98,15 @@ export default function ShowOrderInformation({ order, onClose }) {
 
     return (<>
         {loading && <Spinner transparent={true} />}
-        <div className="flex gap-8 bg-gray-900 rounded-lg pr-5 pb-10 ">
-            <div className="flex flex-col max-h-80 justify-start items-start mt-5 
-            ml-5 overflow-auto scrollbar-custom min-w-[18rem] ">
+        <div className="flex gap-8 bg-gray-900 rounded-lg pr-5 pb-10  flex-col lg:flex-row">
+            <div className="flex flex-col max-h-80 justify-start items-start 
+             overflow-auto scrollbar-custom min-w-[18rem]  lg:ml-5 lg:mt-5 ">
                 {
                     orderItems && orderItems.map(item => <OrderCard key={item.id} information={item} />)
                 }
 
             </div>
-            <div className="pt-10 text-white w-[15rem] ">
+            <div className=" text-white w-[15rem] lg:pt-10  -mt-5 lg:mt-0">
 
                 <h1 >Order number : <small className="text-orange-500 font-bold text-[1rem]">{order.id}</small></h1>
 
@@ -139,7 +139,7 @@ export default function ShowOrderInformation({ order, onClose }) {
                 </div>
                 <p className="mt-3 ">Total price : <span className="text-orange-500 font-bold">${order.totalPrice}</span></p>
                 <div className="text-center mt-10">
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 items-center lg:items-start">
                         {!isEdit && <Button width={40} bg="green" onClick={onClose}>Back</Button>}
                         {isEdit && <Button width={40} bg="red" onClick={() => setIsEdit(false)}>Back</Button>}
                         {authUser.roleId === 1 ? '' : <div className="flex flex-col gap-4">

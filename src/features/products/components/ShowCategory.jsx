@@ -15,9 +15,9 @@ export default function ShowCategory() {
     ]
 
     return (<>
-        <aside className="sticky top-42 bg-black opacity-90
+        <aside className="sticky top-42 bg-black opacity-90 
                  rounded-2xl text-gray-800 p-5 h-full overflow-auto w-full my-5
-                lg:w-64 lg:mx-10 lg:my-0 lg:bg-gray-100">
+                lg:w-64 lg:mx-10 lg:my-0 lg:top-44 lg:bg-gray-100">
             <h1 className="text-2xl font-bold mb-6 hidden lg:block">CATEGORY</h1>
             <ul className=" text-xl font-bold flex flex-wrap justify-center gap-5
              lg:block lg:space-y-4">

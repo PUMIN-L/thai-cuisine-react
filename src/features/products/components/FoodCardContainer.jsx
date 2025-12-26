@@ -20,8 +20,8 @@ export default function FoodCardContainer() {
 
     return (
         <>
-            <div className=" bg-gray-100 rounded-2xl  
-            lg:overflow-auto  lg:w-[52rem] lg:h-full 
+            <div className=" bg-gray-100 rounded-2xl -mt-2
+            lg:w-[52rem] lg:h-full lg:mt-5 
              ">
                 {createOrder[0] ? <div className="flex justify-start">
                     <Link to={'/orders'}>

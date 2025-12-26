@@ -55,6 +55,7 @@ export default function EditMenuContainer({ clossModal }) {
     }
     return (<>
         {
+
             open.openSelectForm && <SelectMenu
                 selected={selectedForEdit}
                 setSelected={setSelectedForEdit}
@@ -63,7 +64,7 @@ export default function EditMenuContainer({ clossModal }) {
         }
 
 
-        {open.openButtonSelect && <div className='flex gap-5 mt-3 justify-center'>
+        {open.openButtonSelect && <div className='flex gap-5 mt-3 justify-center lg:text-lg'>
             <Button bg="yellow" onClick={handleClickEdit} >Edit</Button>
             <Button bg='red' onClick={onClickCancle} >Cencle</Button>
         </div>}

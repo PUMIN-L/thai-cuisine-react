@@ -12,7 +12,8 @@ export default function ShotcutOrderCard({ order }) {
     }
 
     return (<>
-        <div className="flex gap-5 bg-gray-900 p-5 rounded-lg text-white ">
+        <div className="flex flex-col gap-5 bg-gray-900 p-5 rounded-lg  
+        text-white w-85 lg:w-full lg:flex-row ">
             <div>
                 <p>Order id : <span className="text-blue-400 font-bold">{order.id}</span></p>
                 <p className="min-w-32">Total price : <span className="text-orange-400 font-bold">{order.totalPrice}</span></p>
@@ -30,8 +31,11 @@ export default function ShotcutOrderCard({ order }) {
             bg='gray900'
             title={`Order number : ${order.id}`}
             textColor='white'
+
         >
             <ShowOrderInformation order={order} onClose={() => setOpenModal(false)} />
         </Modal>
+
+
     </>)
 }

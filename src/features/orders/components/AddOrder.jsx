@@ -64,13 +64,13 @@ export default function AddOrder({ e, onClose }) {
     }
 
     return (<>
-        <div className="flex flex-col justify-center items-center  mt-2 gap-1 relative
+        <div className="flex flex-col justify-center items-center  mt-2 gap-1 relative 
         lg:flex-row lg:gap-6 
         ">
-            <div className="h-15 w-15 flex gap-5 justify-center items-center my-2 lg:hidden">
+            <div className="h-15 w-15 flex gap-5  my-2 lg:hidden relative ">
                 <img src={e?.imageUrl || thaiFood} alt="food image"
-                    className="border h-full object-cover  rounded-2xl" />
-                <div>
+                    className="  h-full object-cover absolute top-0 right-25 rounded-2xl" />
+                <div className=" absolute w-53 bottom-4 -left-6  ">
                     <div className="flex gap-2 font-bold">
                         <p>No.{e?.number}</p>
                         <p>{e?.name}</p>
@@ -84,7 +84,7 @@ export default function AddOrder({ e, onClose }) {
             {/* For lg up */}
             <div className="h-15 w-15 hidden lg:block">
                 <img src={e?.imageUrl || thaiFood} alt="food image"
-                    className="w-full h-full object-cover  rounded-2xl" />
+                    className=" w-full h-full object-cover  rounded-2xl" />
 
             </div>
 
@@ -106,7 +106,7 @@ export default function AddOrder({ e, onClose }) {
 
         <div className="flex gap-10  mt-3 justify-center ">
             {!resetButton && <Button bg="green" onClick={handleClickAddOrder}>Add Order</Button>}
-            {resetButton && <Button bg="blue" onClick={handleClickRemoveThisFood}>Remove this food</Button>}
+            {resetButton && <Button bg="blue" onClick={handleClickRemoveThisFood}>Remove</Button>}
             <Button bg="red" onClick={handleClickCancle}>Cencle</Button>
         </div>
 
