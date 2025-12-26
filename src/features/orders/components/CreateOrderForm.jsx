@@ -89,16 +89,16 @@ export default function CreateOrderForm() {
     return (<>
         {loading && <Spinner transparent={true} />}
         {
-            createOrder[0] ? (<div className="flex flex-col   shadow-lg  rounded-lg w-full
-            lg:flex-row lg:h-[20rem] lg:w-auto 
-            ">
-                <div className="overflow-auto px-3  mt-60 max-h-[40vh] lg:mt-0 lg:mt-0 lg:max-h-none">
+            createOrder[0] ? (<div className="flex flex-col-reverse shadow-lg rounded-lg w-full mt-85 h-[90vh]
+         lg:flex-row lg:h-[20rem] lg:w-auto lg:mt-0 bg-gray-200 lg:bg-white"
+            >
+                <div className="overflow-auto px-3 h-[50vh] lg:mt-0 lg:mt-2 lg:ml-3 lg:max-h-none ">
                     {createOrder.map(e => {
                         return <ItemOrderCard information={e} key={e.id} />
                     })}
                 </div>
 
-                <div className=" overflow-auto px-10 mt-5 lg:mt-0">
+                <div className=" overflow-auto px-10 mt-5 lg:mt-2 ">
 
                     <div className="flex gap-2 lg:text-lg">
                         <p className="font-bold">Totle Prict</p>

@@ -13,7 +13,7 @@ export default function ShotcutOrderCard({ order }) {
 
     return (<>
         <div className="flex flex-col gap-5 bg-gray-900 p-5 rounded-lg  
-        text-white w-85 lg:w-full lg:flex-row ">
+        text-white w-70 lg:w-full lg:flex-row ">
             <div>
                 <p>Order id : <span className="text-blue-400 font-bold">{order.id}</span></p>
                 <p className="min-w-32">Total price : <span className="text-orange-400 font-bold">{order.totalPrice}</span></p>

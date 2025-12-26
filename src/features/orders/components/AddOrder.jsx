@@ -89,11 +89,11 @@ export default function AddOrder({ e, onClose }) {
             </div>
 
             <div className="hidden lg:block">
-                <div className="flex gap-2 font-bold">
+                <div className="flex gap-2 font-bold text-lg">
                     <p>No.{e?.number}</p>
                     <p>{e?.name}</p>
                 </div>
-                <div className="font-bold">
+                <div className="font-bold  text-lg">
                     Price: {e?.price}
                 </div>
             </div>

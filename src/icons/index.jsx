@@ -378,17 +378,15 @@ export function LockIcon() {
 export function PlusIcon({ className = "" }) {
   return (
     <svg
-      viewBox="362 1037 32 32"
 
+      viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       className={className}
     >
+      <rect x="14" y="0" width="4" height="32" rx="2" ry="2" fill="currentColor" />
+      <rect x="0" y="14" width="32" height="4" rx="2" ry="2" fill="currentColor" />
 
-      <path d="M390,1049 L382,1049 L382,1041 C382,1038.79 380.209,1037 378,1037 C375.791,1037 374,1038.79 
-        374,1041 L374,1049 L366,1049 C363.791,1049 362,1050.79 362,1053 C362,1055.21 363.791,1057 366,1057 L374,1057 
-        L374,1065 C374,1067.21 375.791,1069 378,1069 C380.209,1069 382,1067.21 382,1065 L382,1057 L390,1057 C392.209,1057 
-        394,1055.21 394,1053 C394,1050.79 392.209,1049 390,1049" id="plus" sketch:type="MSShapeGroup" />
     </svg>
   )
 }
@@ -397,15 +395,13 @@ export function PlusIcon({ className = "" }) {
 export function Minus({ className = "" }) {
   return (
     <svg
-      viewBox="414 1049 32 8"
+
+      viewBox="0 0 32 8"
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       className={className}
     >
-
-      <path d="M442,1049 L418,1049 C415.791,1049 414,1050.79 
-      414,1053 C414,1055.21 415.791,1057 418,1057 L442,1057 C444.209,1057 446,1055.21 446,1053 C446,1050.79 444.209,1049 
-      442,1049" id="minus" sketch:type="MSShapeGroup"> </path>
+      <rect x="0" y="0" width="32" height="8" rx="4" ry="4" fill="currentColor" />
     </svg >
   )
 }
