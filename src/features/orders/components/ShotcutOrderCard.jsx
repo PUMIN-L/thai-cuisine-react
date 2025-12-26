@@ -15,8 +15,8 @@ export default function ShotcutOrderCard({ order }) {
         <div className="flex flex-col gap-5 bg-gray-900 p-5 rounded-lg  
         text-white w-70 lg:w-full lg:flex-row ">
             <div>
-                <p>Order id : <span className="text-blue-400 font-bold">{order.id}</span></p>
-                <p className="min-w-32">Total price : <span className="text-orange-400 font-bold">{order.totalPrice}</span></p>
+                <div>Order id : <span className="text-blue-400 font-bold">{order.id}</span></div>
+                <div className="min-w-32">Total price : <span className="text-orange-400 font-bold">{order.totalPrice}</span></div>
             </div>
             <div className="min-w-63 ">
                 <p>Order status : {order.orderStatus}</p>

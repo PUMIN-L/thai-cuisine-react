@@ -384,8 +384,8 @@ export function PlusIcon({ className = "" }) {
       fill="currentColor"
       className={className}
     >
-      <rect x="14" y="0" width="4" height="32" rx="2" ry="2" fill="currentColor" />
-      <rect x="0" y="14" width="32" height="4" rx="2" ry="2" fill="currentColor" />
+      <rect x="12" y="0" width="8" height="32" rx="4" ry="4" />
+      <rect x="0" y="12" width="32" height="8" rx="4" ry="4" />
 
     </svg>
   )
