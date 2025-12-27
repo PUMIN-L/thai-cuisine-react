@@ -108,7 +108,7 @@ export default function ShowOrderInformation({ order, onClose }) {
             </div>
             <div className=" text-white w-[15rem] lg:pt-10  -mt-5 lg:mt-0">
 
-                <h1 >Order number : <small className="text-orange-500 font-bold text-[1rem]">{order.id}</small></h1>
+                <h1 >Order number : <small className="text-orange-500 font-bold text-[1rem]">{order.orderNumber}</small></h1>
 
                 <div className="flex items-center justify-start "><p className="min-w-26">Order status :</p> {isEdit ?
                     <Select
@@ -149,7 +149,7 @@ export default function ShowOrderInformation({ order, onClose }) {
                             <Modal
                                 onClose={() => setOpenConfirmDelete(false)}
                                 open={openConfirmDelete}
-                                title={`Confirm delete order  No.${order.id}`}
+                                title={`Confirm delete order  No.${order.orderNumber}`}
                             >
                                 <ConfirmDelete
                                     deleteFunction={deleteFunction}
