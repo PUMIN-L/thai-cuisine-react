@@ -1,5 +1,4 @@
 
-import authApi from "../../../apis/auth";
 import PictureForm from "../../profile/components/PictureForm";
 import useAuth from "../../../hook/useAuth";
 import Avatar from "./Avatar";
