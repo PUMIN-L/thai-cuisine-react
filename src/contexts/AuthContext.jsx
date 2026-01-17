@@ -15,6 +15,7 @@ export default function AuthContextProvider({ children }) {
   const [isUserLoading, setIsUserLoading] = useState(true)
 
   useEffect(() => {
+    setIsUserLoading(true)
     const fetcUser = async () => {
       try {
         if (getAccessToken()) {
